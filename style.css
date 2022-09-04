@@ -1,0 +1,87 @@
+*:focus {
+    outline: none !important;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.logo-conatiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 232px;
+}
+.logo-txt {
+    position: relative;
+}
+
+.logo-conatiner h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 105px;
+    text-align: center;
+    letter-spacing: -0.9rem;
+    margin: 1rem 0;
+}
+.logo-conatiner h1 span:nth-child(1),
+.logo-conatiner h1 span:nth-child(4) {
+    color: #4285f4;
+}
+.logo-conatiner h1 span:nth-child(2),
+.logo-conatiner h1 span:nth-child(6) {
+    color: #ea4335;
+}
+
+.logo-conatiner h1 span:nth-child(3) {
+    color: #fcc629;
+}
+
+.logo-conatiner h1 span:nth-child(5) {
+    color: #34a853;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 20px;
+    width: 616px;
+    height: 46px;
+}
+.search-container i {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+}
+input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    grid-gap: 15px;
+    margin-top: 39px;
+}
+
+.btn-container button {
+    width: 143px;
+    height: 36px;
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+}
