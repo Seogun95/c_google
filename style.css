@@ -44,17 +44,42 @@ button {
 .logo-conatiner h1 span:nth-child(5) {
     color: #34a853;
 }
-
+.search-container:after {
+    bottom: -1px;
+}
+.search-container:before {
+    top: -1px;
+}
+.search-container:before,
+.search-container:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    content: '';
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(1, 0, 0, 1);
+    background: linear-gradient(to right, #5a5959, #86aaff, #70bc4c, #ffbe00, #f46e85);
+}
+.search-container:hover::after,
+.search-container:hover::before {
+    transform: scaleX(1);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: 0 50%;
+}
 .search-container {
     display: flex;
     flex: 1;
     margin: 0 auto;
     background: #ffffff;
-    border: 1px solid #dfe1e5;
-    border-radius: 24px;
+    border-radius: 2px;
     padding: 0 20px;
     width: 616px;
     height: 46px;
+    position: relative;
+    border: 1px solid #0089ff;
 }
 .search-container i {
     display: flex;
